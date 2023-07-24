@@ -103,7 +103,6 @@
 
     #### 8. Example:
 
-        ```
             var myObject = {
                 foo: "bar",
                 func: function() {
@@ -121,12 +120,9 @@
                 }
             };
             myObject.func();
-            
-        ```
 
     #### 9. Example:
 
-        ```
             function foo1()
             {
                 return {
@@ -144,11 +140,8 @@
             console.log(foo1()); //{  bar: "hello" }
             console.log(foo2()); //undefined
 
-        ```
-
     #### 10. Example:
 
-        ```
             var arr1 = "Ramesh".split('');
             var arr2 = arr1.reverse();
             var arr3 = "Ramesha".split('');
@@ -159,11 +152,9 @@
             console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1)); 
             // "array 2: length=7 last=R,a,m,e,s,h,a"
 
-        ```
-
     #### 11. Example:
 
-    ```
+
         function isPalindrome(str) {
             str = str.replace(/\W/g, '').toLowerCase();
             return (str == str.split('').reverse().join(''));
@@ -173,102 +164,3 @@
         console.log(isPalindrome("levels"));                  // logs 'false'
         console.log(isPalindrome("A car, a man, a maraca"));  // logs 'true'
         
-    ```
-
-
-
-
-console.log("============================");
-
-
-
-
-console.log("============================");
-
-function areTheNumbersAlmostEqual(num1, num2) {
-	return Math.abs( num1 - num2 ) < Number.EPSILON;
-}
-console.log(areTheNumbersAlmostEqual(0.1 + 0.2, 0.3));
-
-console.log("============================");
-(function() {
-    console.log(1); 
-    setTimeout(function(){console.log(2)}, 1000); 
-    setTimeout(function(){console.log(3)}, 0); 
-    console.log(4);
-})();
-
-console.log("============================");
-
-console.log(sum(2,3));   // Outputs 5
-console.log(sum(2)(3));  // Outputs 5
-
-///METHOD 1
-function sum(x) {
-  if (arguments.length == 2) {
-    return arguments[0] + arguments[1];
-  } else {
-    return function(y) { return x + y; };
-  }
-}
-
-///METHOD 2
-
-function sum(x, y) {
-  if (y !== undefined) {
-    return x + y;
-  } else {
-    return function(y) { return x + y; };
-  }
-}
-console.log("============================");
-
-for (var i = 0; i < 5; i++) {
-  var btn = document.createElement('button');
-  btn.appendChild(document.createTextNode('Button ' + i));
-  btn.addEventListener('click', (function(i) {
-    return function() { console.log(i); };
-  })(i));
-  document.body.appendChild(btn);
-}
-
-['a', 'b', 'c', 'd', 'e'].forEach(function (value, i) {
-  var btn = document.createElement('button');
-  btn.appendChild(document.createTextNode('Button ' + i));
-  btn.addEventListener('click', function() { console.log(i); });
-  document.body.appendChild(btn);
-});
-console.log("============================");
-
-
-
-
-
-```
-let arr3 = [1,4,[3,5,7,2],[[5,8,3]],[5,9,1],8];
-console.log(arr3.flat(2));
-
-
-const arr = [...new Set(arr3.flat(2))]
-
-const soretedarr = arr.sort((a,b) => a-b);
-console.log(soretedarr);
-
-```
-
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
-2. ###
