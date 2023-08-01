@@ -40,7 +40,7 @@
             console.log(c) // 40 inside block
         }
         print();
-        console.log("a ",a); // 10 take last value
+        console.log("a ",a); // 5 outside block
         console.log("b ",b) // 15 outside block
         console.log("c ",c) // 20 outside block
 
@@ -51,7 +51,6 @@
         console.log( 2 == 2 ); // true
         console.log( "2" == 2 ); // true
         console.log( "2" == "3" ); // false
-        console.log( 2 === 2 ); // true
         console.log( "1" === true); // false
 
     #### 3. Example:  
@@ -140,13 +139,13 @@
 
         function foo2()
         {
-            return
+            return      // Line Bracking error 'return'
             {
                 bar: "hello"
             };
         }
         console.log(foo1()); //{  bar: "hello" }
-        console.log(foo2()); //undefined
+        console.log(foo2()); //undefined 
 
     #### 10. Example:
 
